@@ -26,7 +26,7 @@ def call_llm(messages):
 def create_plan(goal):
     return call_llm([
         {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": f"CEL: {goal}\nStwórz plan treningowy krok po kroku, a nastepnie diete rozpisaną na kilka tygodni"}
+        {"role": "user", "content": f"CEL: {goal}\n Stwórz plan treningowy krok po kroku, a nastepnie diete rozpisaną na kilka tygodni"}
     ])
 
 def execute_step(goal, plan, step):
@@ -92,4 +92,5 @@ if st.button("🚀 START") and goal:
     else:
 
         st.warning("⚠️ Plan wykonany, ale by osiągnąć cel potrzebne jest twoje zaangażowanie a nie lecenie w ciula")
+
 
