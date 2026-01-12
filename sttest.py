@@ -64,7 +64,7 @@ Odpowiedz tylko: TAK lub NIE.
 st.set_page_config(page_title="Autonomiczny Agent AI", page_icon="🤖")
 st.title("🤖 Fit Sergio Trener AI")
 
-goal = st.text_area("🎯 Podaj cel dla agenta:")
+goal = st.text_area("🎯 Witaj koleżko opowiedz trochę o sobie i jaki jest twój cel treningowy:")
 
 if st.button("🚀 START") and goal:
     st.subheader("🧠 Planowanie")
@@ -92,3 +92,4 @@ if st.button("🚀 START") and goal:
     else:
 
         st.warning("⚠️ Plan wykonany, ale by osiągnąć cel potrzebne jest twoje zaangażowanie a nie lecenie w ciula")
+
