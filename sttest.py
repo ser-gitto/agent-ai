@@ -161,4 +161,5 @@ if st.session_state.started and st.session_state.mode == "process":
     st.session_state.current_step += 1
     st.session_state.user_input = ""
     st.session_state.mode = "wait"
-    st.experimental_rerun()
+    st.rerun()
+
